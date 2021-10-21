@@ -195,7 +195,7 @@ export const UIProvider: FC = (props) => {
       setSidebarView,
       setUserAvatar,
     }),
-    [state]
+    [closeDropdown, closeModal, closeSidebar, closeSidebarIfPresent, openDropdown, openModal, openSidebar, setModalView, setSidebarView, setUserAvatar, state, toggleSidebar]
   )
 
   return <UIContext.Provider value={value} {...props} />
