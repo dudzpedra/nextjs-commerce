@@ -22,7 +22,7 @@ Next.js Commerce integrates out-of-the-box with BigCommerce, Shopify, Swell, Sal
 
 ## Configuration
 
-Run npm run start to start a development server (default: localhost:3000). 
+Run `npm run start` to start a development server (default: `localhost:3000`). 
 
 ### Features
 
