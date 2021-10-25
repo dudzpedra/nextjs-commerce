@@ -114,7 +114,7 @@ const Layout: FC<Props> = ({
           hide={acceptedCookies}
           action={
             <Button className="mx-5" onClick={() => onAcceptCookies()}>
-              Accept cookies
+              Aceitar Biscoitos
             </Button>
           }
         />

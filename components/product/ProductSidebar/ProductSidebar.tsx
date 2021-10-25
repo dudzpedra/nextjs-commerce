@@ -9,6 +9,7 @@ import {
   selectDefaultOptionFromProduct,
   SelectedOptions,
 } from '../helpers'
+import Link from 'next/link'
 
 interface ProductSidebarProps {
   product: Product
@@ -66,8 +67,8 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
             disabled={variant?.availableForSale === false}
           >
             {variant?.availableForSale === false
-              ? 'Not Available'
-              : 'Add To Cart'}
+              ? 'INDISPONÍVEL'
+              : 'Adicionar ao Carrinho'}
           </Button>
         )}
       </div>
@@ -81,6 +82,11 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
           drop ends. Reminder: Bad Boys For Life. Shipping may take 10+ days due
           to COVID-19.
         </Collapse>
+      </div>
+      <div className="mt-6 bg-secondary text-secondary mx-auto px-4 py-4 font-bold">
+        <Link href="/search">
+              <a>CONTINUAR COMPRANDO</a>
+        </Link>
       </div>
     </div>
   )

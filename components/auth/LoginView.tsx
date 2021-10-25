@@ -88,13 +88,13 @@ const LoginView: FC<Props> = () => {
           Log In
         </Button>
         <div className="pt-1 text-center text-sm">
-          <span className="text-accent-7">Don't have an account?</span>
+          <span className="text-accent-7">Primeira vez aqui?</span>
           {` `}
           <a
             className="text-accent-9 font-bold hover:underline cursor-pointer"
             onClick={() => setModalView('SIGNUP_VIEW')}
           >
-            Sign Up
+            Crie uma conta
           </a>
         </div>
       </div>

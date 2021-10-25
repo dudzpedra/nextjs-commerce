@@ -10,6 +10,7 @@ const Head: FC = () => {
       <NextHead>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="manifest" href="/site.webmanifest" key="site-manifest" />
+        <title>Dudz Store</title>
       </NextHead>
     </>
   )

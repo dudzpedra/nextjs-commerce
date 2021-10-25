@@ -1,7 +1,7 @@
 import commerce from '@lib/api/commerce'
 import { Layout } from '@components/common'
 import { ProductCard } from '@components/product'
-import { Grid, Marquee, Hero } from '@components/ui'
+// import { Grid, Marquee, Hero } from '@components/ui'
 // import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 
@@ -12,7 +12,7 @@ export async function getStaticProps({
 }: GetStaticPropsContext) {
   const config = { locale, locales }
   const productsPromise = commerce.getAllProducts({
-    variables: { first: 6 },
+    variables: { first: 8 },
     config,
     preview,
     // Saleor provider only
@@ -54,16 +54,19 @@ export default function Home({
         ))}
       </Grid> */}
       <div>
+        <div>
         {products.map((product: any) => (
           <ProductCard
+          variant="slim"
             key={product.id}
             product={product}
             imgProps={{
-              width: 240,
-              height: 240
+              width: 300,
+              height: 300
             }}
           />
         ))}
+        </div>
       </div>
       {/* <Marquee variant="secondary">
         {products.slice(0, 3).map((product: any, i: number) => (

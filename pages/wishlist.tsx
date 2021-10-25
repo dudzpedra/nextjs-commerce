@@ -39,6 +39,10 @@ export default function Wishlist() {
   // @ts-ignore Shopify - Fix this types
   const { data, isLoading, isEmpty } = useWishlist({ includeProducts: true })
 
+  console.log("data: ", data)
+  console.log("isLoading: ", isLoading)
+  console.log("isEmpty: ", isEmpty)
+
   return (
     <Container>
       <div className="mt-3 mb-20">

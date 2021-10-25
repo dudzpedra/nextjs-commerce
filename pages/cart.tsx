@@ -49,10 +49,10 @@ export default function Cart() {
               <Bag className="absolute" />
             </span>
             <h2 className="pt-6 text-2xl font-bold tracking-wide text-center">
-              Your cart is empty
+              Carrinho vazio
             </h2>
             <p className="text-accent-6 px-10 text-center pt-2">
-              Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+              Não há itens selecionados.
             </p>
           </div>
         ) : error ? (
