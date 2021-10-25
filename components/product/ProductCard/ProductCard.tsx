@@ -43,7 +43,16 @@ const ProductCard: FC<Props> = ({
         {variant === 'slim' && (
           <>
             <div className={s.header}>
-              <span>{product.name}</span>
+              <span>
+                {product.name} | {`${price} ${product.price?.currencyCode}`}
+              </span>
+              {process.env.COMMERCE_WISHLIST_ENABLED && (
+                <WishlistButton
+                  className={s.wishlistButton}
+                  productId={product.id}
+                  variant={product.variants[0]}
+                />
+              )}
             </div>
             {product?.images && (
               <Image

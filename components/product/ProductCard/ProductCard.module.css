@@ -105,8 +105,12 @@
 }
 
 .slim span {
-  @apply absolute bottom-0 bg-accent-9 text-accent-0 inline-block p-3
+  @apply absolute ml-5 bottom-0 bg-accent-9 text-accent-0 inline-block p-3
   text-sm break-words;
+}
+
+.slim .wishlistButton {
+  @apply mr-3;
 }
 
 .root:global(.secondary) .header span {
