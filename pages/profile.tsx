@@ -24,15 +24,21 @@ export default function Profile() {
   const { data } = useCustomer()
   return (
     <Container>
-      <Text variant="pageHeading">My Profile</Text>
+      <Text variant="pageHeading">Área do Usuário</Text>
       {data && (
         <div className="grid lg:grid-cols-12">
           <div className="lg:col-span-8 pr-4">
             <div>
-              <Text variant="sectionHeading">Full Name</Text>
+              <Text variant="sectionHeading">Nome Completo</Text>
               <span>
                 {data.firstName} {data.lastName}
               </span>
+            </div>
+            <div>
+              <Text variant="sectionHeading">Endereço</Text>
+              {<span>
+                {data.address ? data.address : "Endereço não informado"}
+              </span>}
             </div>
             <div className="mt-5">
               <Text variant="sectionHeading">Email</Text>

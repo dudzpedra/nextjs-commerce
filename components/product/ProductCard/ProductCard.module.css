@@ -96,7 +96,7 @@
 
 /* Variant Slim */
 .slim {
-  @apply bg-transparent relative overflow-hidden w-1/4
+  @apply bg-transparent relative overflow-hidden w-1/4 mt-2
   box-border;
 }
 

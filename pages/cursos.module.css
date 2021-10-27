@@ -1,0 +1,34 @@
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    border: 1px solid orangered;
+    padding: 1rem;
+    width: 60%;
+    text-align: center;
+}
+
+.jogos h2, .apps h2 {
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.jogos nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.btn {
+    margin: 2rem 0;
+}
+
+.jogos a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
